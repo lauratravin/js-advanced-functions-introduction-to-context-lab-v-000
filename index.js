@@ -82,5 +82,5 @@ function allWagesFor(employeeRecord){
 // }
 
 let findEmployeeByFirstName = function(srcArray, firstName) {
-  let a = srcArray.map(x => x.firstName).indexOf(firstName)
+  let a = srcArray.map(x => x[0]).indexOf(firstName)
 }
