@@ -75,12 +75,12 @@ function allWagesFor(employeeRecord){
 }
 
 
-// let findEmployeeByFirstName = function(srcArray, firstName) {
-//   return srcArray.find(function(rec){
-//     return rec.firstName === firstName
-//   })
-// }
-
 let findEmployeeByFirstName = function(srcArray, firstName) {
-  let a = srcArray.map(x => x[0]).indexOf(firstName)
+  return srcArray.find(function(rec){
+    return rec.firstName === firstName
+  })
 }
+
+// let findEmployeeByFirstName = function(srcArray, firstName) {
+//   let a = srcArray.map(x => x[0]).indexOf(firstName)
+// }
