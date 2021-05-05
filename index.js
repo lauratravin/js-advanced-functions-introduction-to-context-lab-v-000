@@ -81,6 +81,10 @@ let findEmployeeByFirstName = function(srcArray, firstName) {
   })
 }
 
-// let findEmployeeByFirstName = function(srcArray, firstName) {
-//   let a = srcArray.map(x => x[0]).indexOf(firstName)
-// }
+function  calculatePayroll(calculatePayroll){
+   return calculatePayroll.reduce(
+          function( acu, cur){
+             return acu + allWagesFor(cur)
+          }, 0 )
+   
+}
